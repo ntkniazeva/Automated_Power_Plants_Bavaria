@@ -52,7 +52,7 @@ out geom;
 data/bayern_postcodes_overpass_turbo.geojson
 ```
 ## Example Outputs
-* Processed Dataset: Shapefile/GeoJSON with over 12,000 entries of power plants and related attributes.
+* Processed Dataset: Shapefile with over 12,000 entries of power plants and related attributes. [Example Shapefile]().
 * Visualization: Map layers displaying corrected placements of power plants in Bavaria. [Example Map](https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria/blob/main/output/Example%20map.png).
 
 ## Acknowledgments
