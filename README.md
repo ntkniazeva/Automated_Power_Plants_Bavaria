@@ -14,10 +14,10 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 ## Repository Structure
 ```
 ├── data
-│   └── sources
-│       ├── Bundesnetzagentur
+│   └── sources # holds the datasets downloaded from different sources
+│       ├── Bundesnetzagentur # Contains power plant data from the German Federal Network Agency
 │       │   └── bundesnetzagentur_power_plants.xlsx
-│       └── Energieatlas
+│       └── Energieatlas # a collection of 7 Excel files from the Energieatlas Bayern
 │           ├── energieatlas_biomass.xlsx
 │           ├── energieatlas_biomethane.xlsx
 │           ├── energieatlas_fossil.xlsx
@@ -25,14 +25,14 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 │           ├── energieatlas_kwk.xlsx
 │           ├── energieatlas_solarthermal.xlsx
 │           └── energieatlas_waste.xlsx
-├── scripts
-│   ├── geocoding_xlsx.ipynb
-│   ├── merge_shapefiles.ipynb
-│   ├── osm_search.ipynb
-│   ├── postcodes.ipynb
-│   └── utils.py
-├── LICENSE
-├── README.md
+├── scripts # Contains the Python scripts and Jupyter Notebooks used for processing and analyzing the data
+│   ├── geocoding_xlsx.ipynb #  processes and analyzes the data
+│   ├── merge_shapefiles.ipynb # merges various shapefiles into a single dataset
+│   ├── osm_search.ipynb # queries and filters OpenStreetMap (OSM) data related to energy infrastructure in Bavaria
+│   ├── postcodes.ipynb # queries and processes postcode-related information to check outliers
+│   └── utils.py # contains utility functions for tasks such as cleaning column names and geometry extraction
+├── LICENSE # outlines terms and conditions
+├── README.md # contains the description of the repository
 ```
 ## Downloading Data via Overpass Turbo  
 To obtain the Bavarian postal code boundaries, use the following Overpass Turbo query: 
