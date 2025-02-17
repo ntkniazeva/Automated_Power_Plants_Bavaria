@@ -55,4 +55,4 @@ data/bayern_postcodes_overpass_turbo.geojson
 This work was supervised by Prof. Dr. rer. nat. T. Hamacher and advisor Patrick Buchenberg at the Chair of Renewable and Sustainable Energy Systems, Technical University of Munich.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
