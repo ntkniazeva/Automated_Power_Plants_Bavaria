@@ -23,3 +23,18 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 ├── README.md                 # Project description
 └── requirements.txt          # List of Python dependencies
 ```
+## Downloading Data via Overpass Turbo  
+To obtain the Bavarian postal code boundaries, use the following Overpass Turbo query: 
+```overpass
+[out:json][timeout:90];
+area[name="Bayern"];
+relation(area)["boundary"="postal_code"];
+out geom;
+```
+1. Go to [Overpass Turbo](https://overpass-turbo.eu/).
+2. Copy and paste the query into the editor.
+3. Run the query and export the result as GeoJSON.
+4. Save it as:
+```
+data/bayern_postcodes_overpass_turbo.geojson
+```
