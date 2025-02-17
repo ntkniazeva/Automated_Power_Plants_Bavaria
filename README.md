@@ -54,7 +54,7 @@ data/bayern_postcodes_overpass_turbo.geojson
 ## Example Outputs
 * Processed Dataset: Shapefile/GeoJSON with over 12,000 entries of power plants and related attributes.
 * Visualization: Map layers displaying corrected placements of power plants in Bavaria.
-![Example Map](output/Example map.png)
+[Example Map](output/Example map.png)
 ## Acknowledgments
 This work was supervised by Prof. Dr. rer. nat. T. Hamacher and advisor Patrick Buchenberg at the Chair of Renewable and Sustainable Energy Systems, Technical University of Munich.
 
