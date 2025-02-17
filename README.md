@@ -13,15 +13,26 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 * Data Sources: OpenStreetMap, Energieatlas Bayern, Bundesnetzagentur, Open Power System Data (OPSD)
 ## Repository Structure
 ```
-├── data/                     # Placeholder for raw and processed data (add only open data links if applicable)
-├── scripts/                  # Python scripts for data processing
-│   ├── geocoding_xlsx.ipynb    # Handles data cleaning and integration
-│   ├── merge_shapefiles.ipynb  # Validation and correction of outliers
-│   └── osm_search.ipynb      # Optional: Code for visualizing results in QGIS
-│   └── postcodes.ipynb      # Optional: Code for visualizing results in QGIS
-│   └── utils.py      # Optional: Code for visualizing results in QGIS
-├── README.md                 # Project description
-└── requirements.txt          # List of Python dependencies
+├── data
+│   └── sources
+│       ├── Bundesnetzagentur
+│       │   └── bundesnetzagentur_power_plants.xlsx
+│       └── Energieatlas
+│           ├── energieatlas_biomass.xlsx
+│           ├── energieatlas_biomethane.xlsx
+│           ├── energieatlas_fossil.xlsx
+│           ├── energieatlas_geothermal.xlsx
+│           ├── energieatlas_kwk.xlsx
+│           ├── energieatlas_solarthermal.xlsx
+│           └── energieatlas_waste.xlsx
+├── scripts
+│   ├── geocoding_xlsx.ipynb
+│   ├── merge_shapefiles.ipynb
+│   ├── osm_search.ipynb
+│   ├── postcodes.ipynb
+│   └── utils.py
+├── LICENSE
+├── README.md
 ```
 ## Downloading Data via Overpass Turbo  
 To obtain the Bavarian postal code boundaries, use the following Overpass Turbo query: 
