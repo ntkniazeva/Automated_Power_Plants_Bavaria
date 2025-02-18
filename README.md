@@ -35,7 +35,7 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 │   └── utils.py                         #contains utility functions for tasks such as cleaning column names and geometry extraction
 ├── LICENSE                              #outlines terms and conditions
 ├── README.md                            #contains the description of the repository
-└── requirements.txt                     # helps to set dependencies for the project
+└── requirements.txt                     #helps to set dependencies for the project
 ```
 ## How to Run
 ### Download Data via Overpass Turbo  
