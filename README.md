@@ -35,6 +35,7 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 │   └── utils.py                         #contains utility functions for tasks such as cleaning column names and geometry extraction
 ├── LICENSE                              #outlines terms and conditions
 ├── README.md                            #contains the description of the repository
+└── requirements.txt                     # helps to set dependencies for the project
 ```
 ## How to Run
 ### Download Data via Overpass Turbo  
@@ -56,7 +57,7 @@ data/bayern_postcodes_overpass_turbo.geojson
 1. Clone the repository:
 ```
 git clone https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria.git
-cd Automated_Energy_Assessment_Bavaria
+cd Automated_Power_Plants_Bavaria
 ```
 2. Install dependencies:
 Make sure you have Python installed. Then run:
@@ -66,7 +67,11 @@ pip install -r requirements.txt
 3. Run scripts:
 Execute the processing workflow:
 ```
-python scripts/data_processing.py
+python scripts/utils.py
+jupyter nbconvert --execute --to notebook scripts/postcodes.ipynb
+jupyter nbconvert --execute --to notebook scripts/geocoding_xlsx.ipynb
+jupyter nbconvert --execute --to notebook scripts/osm_search.ipynb
+jupyter nbconvert --execute --to notebook scripts/merge_shapefiles.ipynb 
 ```
 ## Example Outputs
 * Processed Dataset: Shapefile with over 12,000 entries of power plants and related attributes.
