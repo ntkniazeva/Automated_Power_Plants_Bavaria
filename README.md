@@ -9,7 +9,7 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 * Utilized Python libraries: GeoPandas, Pandas, Shapely, Nominatim.
 ## Technologies Used
 * Programming Language: Python 3.9+
-* Libraries: GeoPandas, Pandas, Shapely, Geopy, osmnx
+* Libraries: GeoPandas, Pandas, Shapely, Geopy
 * Data Sources: OpenStreetMap, Energieatlas Bayern, Bundesnetzagentur, Open Power System Data (OPSD)
 ## Repository Structure
 ```
