@@ -36,7 +36,8 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 ├── LICENSE                              #outlines terms and conditions
 ├── README.md                            #contains the description of the repository
 ```
-## Downloading Data via Overpass Turbo  
+## How to Run
+### Download Data via Overpass Turbo  
 To obtain the Bavarian postal code boundaries, use the following Overpass Turbo query: 
 ```overpass
 [out:json][timeout:90];
@@ -50,6 +51,22 @@ out geom;
 4. Save it as:
 ```
 data/bayern_postcodes_overpass_turbo.geojson
+```
+### Run the code
+1. Clone the repository:
+```
+git clone https://github.com/YourUsername/Automated_Energy_Assessment_Bavaria.git
+cd Automated_Energy_Assessment_Bavaria
+```
+2. Install dependencies:
+Make sure you have Python installed. Then run:
+```
+pip install -r requirements.txt
+```
+3. Run scripts:
+Execute the processing workflow:
+```
+python scripts/data_processing.py
 ```
 ## Example Outputs
 * Processed Dataset: Shapefile with over 12,000 entries of power plants and related attributes.
