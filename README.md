@@ -55,7 +55,7 @@ data/bayern_postcodes_overpass_turbo.geojson
 ### Run the code
 1. Clone the repository:
 ```
-git clone https://github.com/YourUsername/Automated_Energy_Assessment_Bavaria.git
+git clone https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria.git
 cd Automated_Energy_Assessment_Bavaria
 ```
 2. Install dependencies:
