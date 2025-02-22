@@ -67,8 +67,7 @@ data/bayern_postcodes_overpass_turbo.geojson
 git clone https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria.git
 cd Automated_Power_Plants_Bavaria
 ```
-2. Install dependencies:
-Make sure you have Python installed. Then run:
+2. Install the required dependencies in a Conda environment using:
 ```
 pip install -r requirements.txt
 ```
