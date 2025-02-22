@@ -75,10 +75,10 @@ pip install -r requirements.txt
 3. Run scripts:
 Execute the processing workflow:
 ```
-jupyter -m nbconvert --execute --to notebook scripts/postcodes.ipynb
-jupyter -m nbconvert --execute --to notebook scripts/geocoding_xlsx.ipynb
-jupyter -m nbconvert --execute --to notebook scripts/osm_search.ipynb
-jupyter -m nbconvert --execute --to notebook scripts/merge_shapefiles.ipynb 
+jupyter nbconvert --execute --to notebook scripts/postcodes.ipynb
+jupyter nbconvert --execute --to notebook scripts/geocoding_xlsx.ipynb
+jupyter nbconvert --execute --to notebook scripts/osm_search.ipynb
+jupyter nbconvert --execute --to notebook scripts/merge_shapefiles.ipynb 
 ```
 ## Example Outputs
 * Processed Dataset: Shapefile with over 12,000 entries of power plants and related attributes.
