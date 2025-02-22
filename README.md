@@ -14,28 +14,36 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 ## Repository Structure
 ```
 ├── data
-│   └── sources                         #holds the datasets downloaded from different sources
-│       ├── Bundesnetzagentur           #Contains power plant data from the German Federal Network Agency
+│   ├── Germany_postcodes
+│   │   └── Germany_postcodes.txt
+│   ├── sources                                     #holds the datasets downloaded from different sources
+│       ├── Bundesnetzagentur                       #Contains power plant data from the German Federal Network Agency
 │       │   └── bundesnetzagentur_power_plants.xlsx
-│       ├── Energieatlas                #a collection of 7 Excel files from the Energieatlas Bayern
-│           ├── energieatlas_biomass.xlsx
-│           ├── energieatlas_biomethane.xlsx
-│           ├── energieatlas_fossil.xlsx
-│           ├── energieatlas_geothermal.xlsx
-│           ├── energieatlas_kwk.xlsx
-│           ├── energieatlas_solarthermal.xlsx
-│           └── energieatlas_waste.xlsx
-│       └── Open Power System Data_OPSD  #contains data on conventional power plants in Germany
+│       ├── Energieatlas                            #a collection of 7 Excel files from the Energieatlas Bayern
+│       │   ├── energieatlas_biomass.xlsx
+│       │   ├── energieatlas_biomethane.xlsx
+│       │   ├── energieatlas_fossil.xlsx
+│       │   ├── energieatlas_geothermal.xlsx
+│       │   ├── energieatlas_kwk.xlsx
+│       │   ├── energieatlas_solarthermal.xlsx
+│       │   └── energieatlas_waste.xlsx
+│       └── Open Power System Data_OPSD              #contains data on conventional power plants in Germany
 │           └── OPSD_conventional_power_plants.xlsx
-├── scripts                              #contains the Python scripts and Jupyter Notebooks used for processing and analyzing the data
-│   ├── geocoding_xlsx.ipynb             #processes and analyzes the data
-│   ├── merge_shapefiles.ipynb           #merges various shapefiles into a single dataset
-│   ├── osm_search.ipynb                 #queries and filters OpenStreetMap (OSM) data related to energy infrastructure in Bavaria
-│   ├── postcodes.ipynb                  #queries and processes postcode-related information to check outliers
-│   └── utils.py                         #contains utility functions for tasks such as cleaning column names and geometry extraction
-├── LICENSE                              #outlines terms and conditions
-├── README.md                            #contains the description of the repository
-└── requirements.txt                     #helps to set dependencies for the project
+│   └── bayern_postcodes_overpass_turbo.geojson
+├── output
+│   └── Example map.png
+├── scripts                                          #contains the Python scripts and Jupyter Notebooks used for processing and analyzing the data
+│   ├── .ipynb_checkpoints
+│       └── geocoding_xlsx-checkpoint.ipynb
+│   ├── geocoding_xlsx.ipynb                         #processes and analyzes the data
+│   ├── merge_shapefiles.ipynb                       #merges various shapefiles into a single dataset
+│   ├── osm_search.ipynb                             #queries and filters OpenStreetMap (OSM) data related to energy infrastructure in Bavaria
+│   ├── postcodes.ipynb                              #queries and processes postcode-related information to check outliers
+│   └── utils.py                                     #contains utility functions for tasks such as cleaning column names and geometry extraction
+├── .gitignore
+├── LICENSE                                          #outlines terms and conditions
+├── README.md                                        #contains the description of the repository
+└── requirements.txt                                 #helps to set dependencies for the project
 ```
 ## How to Run
 ### Download Data via Overpass Turbo  
