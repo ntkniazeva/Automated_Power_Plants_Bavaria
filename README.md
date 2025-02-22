@@ -31,7 +31,7 @@ Bavaria is transitioning toward renewable energy with a special focus on geother
 │ │ └── OPSD_conventional_power_plants.xlsx
 │ └── bayern_postcodes_overpass_turbo.geojson
 ├── output
-│ └── Example map.png
+│ └── Example map.jpg
 ├── scripts                                     # contains the Python scripts and Jupyter Notebooks used for processing and analyzing the data
 │ ├── .ipynb_checkpoints
 │ │ └── geocoding_xlsx-checkpoint.ipynb
@@ -81,7 +81,7 @@ jupyter nbconvert --execute --to notebook scripts/merge_shapefiles.ipynb
 ```
 ## Example Outputs
 * Processed Dataset: Shapefile with over 12,000 entries of power plants and related attributes.
-* Visualization: Map layers displaying corrected placements of power plants in Bavaria. [Example Map](https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria/blob/main/output/Example%20map.png).
+* Visualization: Map layers displaying corrected placements of power plants in Bavaria. [Example Map](https://github.com/ntkniazeva/Automated_Power_Plants_Bavaria/blob/main/output/Example%20map.jpg).
 
 ## Acknowledgments
 This work was supervised by Prof. Dr. rer. nat. T. Hamacher and advisor Patrick Buchenberg at the Chair of Renewable and Sustainable Energy Systems, Technical University of Munich.
