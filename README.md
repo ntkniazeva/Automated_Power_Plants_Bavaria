@@ -67,7 +67,6 @@ pip install -r requirements.txt
 3. Run scripts:
 Execute the processing workflow:
 ```
-python -m scripts/utils.py
 jupyter -m nbconvert --execute --to notebook scripts/postcodes.ipynb
 jupyter -m nbconvert --execute --to notebook scripts/geocoding_xlsx.ipynb
 jupyter -m nbconvert --execute --to notebook scripts/osm_search.ipynb
